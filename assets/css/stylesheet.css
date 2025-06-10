@@ -1,82 +1,284 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
 
 body {
-  margin: 0px;
-  font-family: "Roboto";
+  font-family: 'montserrat', sans-serif;
+}
+
+
+/* her opstiller jeg mine grundfarver for hele siden */
+:root {
+--white: #fdfdfd;
+--light: #dddddd;
+--medium: #999;
+--dark: #333;
+--black: #212121;
+--headings: #32729b;
+--logo-blue: #377fac;
+--logo-yellow: #e7901e;
+--logo-red: #bc4428;
+--static: #44ccee;
+--active: #00ff84;
+}
+
+
+.secondHeader{
+  color: var(--headings);
+  font-weight: 400;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.mainHeader1 {
+  color: var(--logo-blue);
+}
+.mainHeader2{
+  color: var(--logo-yellow);
+}
+.mainHeader3{
+  color: var(--logo-red);
+}
+
+.mainHeader1, .mainHeader2, .mainHeader3 {
+  font-weight: 800;
+  font-size: 6.5rem;
+}
+
+
+/* Her opstiller jeg mine css krav for nav sektionen */
+
+.mainNav ul li {
+  list-style: none;
+  text-decoration: none;
+}
+.mainNav{
+  background-color: #333333;
+}
+
+.mainNav ul li button {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  color: var(--light);
+
+}
+
+.mainNav ul {
+  padding: 0.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.mainNav a {
+  text-decoration: none;
+  color: var(--light)
+}
+
+.mainNav a:hover {
+  color: var(--static);
+}
+
+.OmOsheader{
+  color: var(--headings);
+  font-weight: 400;
+}
+
+.omOs figure{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.omOs figcaption {
+  line-height: 25px;
+}
+
+.læsMere{
+  text-decoration: none;
+}
+
+.omOs video {
+  width: 100%;
+  height: auto;
+  margin-left: -2rem;
+  
+}
+
+
+/* her definerer jeg mine cards */
+
+
+.cardSection {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.cards {
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+
+
+.cardSection img{
+width: 100%;
+height: 50%;
+padding: 0.1rem;
+margin: 0.1rem;
+}
+
+.cardHeadings{
+  color: var(--headings);
+  font-weight: 400;
+}
+
+
+
+
+/* her kommer min css for tileSwitcher */
+
+#favoriteParent {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 5px;
+  row-gap: 0px;
+  padding: 0 40px 40px 40px;
+}
+
+#favoriteParent .div1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+#favoriteParent .div2 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+#favoriteParent .div3 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+#favoriteParent .div4 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+#favoriteParent .div5 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+#favoriteParent img {
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+/* her kommer min footer css */
+
+.mainfooter{
+  background-color: var(--dark);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.mainfooter span{
+  color: var(--logo-blue);
+}
+.mainfooter figure figcaption{
+  margin: 2rem;
+  font-size: 1.4rem;
+  line-height: 37px;
+}
+.mainfooter figure iframe{
+  height: 50%;
+  margin: 1.2rem;
+}
+
+
+
+/* her kommer css for form modal */
+
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
   text-align: center;
+  background-color: #ccc;
+}
+legend {
+  background-color: #ccc;
+  width: 400px;
+  border: solid;
 }
 
-#container {
-  color: #999;
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: bold;
-  padding-top: 200px;
-  position: fixed;
-  width: 100%;
-  bottom: 45%;
-  display: block;
+input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #ffffffdc;
 }
 
-#flip {
-  height: 50px;
-  overflow: hidden;
+label {
+  margin: 1rem;
+  padding: 1rem;
 }
 
-#flip > div > div {
-  display: inline-block;
-  color: #fff;
-  padding: 4px 12px;
-  height: 45px;
-  margin-bottom: 45px;
+.navntxt {
+  margin-left: 0.2rem;
 }
 
-#flip div:first-child {
-  animation: show 3s linear infinite;
+.numbertxt {
+  margin-left: 1.65rem;
 }
 
-#flip div div {
-  background: #42c58a;
-}
-#flip div:first-child div {
-  background: #4ec7f3;
-}
-#flip div:last-child div {
-  background: #dc143c;
-}
-
-@keyframes show {
-  0% {
-    margin-top: -270px;
-  }
-  5% {
-    margin-top: -180px;
-  }
-  33% {
-    margin-top: -180px;
-  }
-  38% {
-    margin-top: -90px;
-  }
-  66% {
-    margin-top: -90px;
-  }
-  71% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
+textarea {
+  resize: none;
+  margin: 0.5rem;
+  width: 400px;
+  min-height: 200px;
+  max-width: 400px;
+  max-height: 700px;
+  background-color: #ffffffdc;
 }
 
-p {
-  position: fixed;
-  width: 100%;
-  bottom: 30px;
-  font-size: 12px;
-  color: #999;
-  margin-top: 200px;
+.efterNavn label {
+  margin: 0;
+}
+.adresse label {
+  margin: 0.4rem;
+}
+.postNummer label {
+  margin: -0.8rem;
+}
+
+
+form > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.subres input {
+  background-color: rgb(37, 117, 163);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
 }

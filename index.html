@@ -8,16 +8,269 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
   </head>
   <body>
-    <div id="container">
-      Opbyg
-      <div id="flip">
-        <div><div>HTML</div></div>
-        <div><div>CSS</div></div>
-        <div><div>JavaScript</div></div>
-      </div>
-      Stilet
-    </div>
+   
+<header>
+<h1>
+  <span class="mainHeader1">bli</span><span class="mainHeader2">ba</span><span class="mainHeader3">do</span>
+</h1>
+<h2 class="secondHeader">Vi ved hvor du bor</h2>
 
-    <p>Den er bare mega stilet</p>
+<nav class="mainNav">
+  <ul>
+<li><a href="#">Om os</a></li>
+<li><a href="#">Locations</a></li>
+<li><a href="#">Aktuelt</a></li>
+<li><a onclick="window.mydialog.show();">SignUp</a>
+</li>
+</ul>
+</nav>
+
+<dialog id="mydialog">
+  <form action="takfordet.html">
+    <fieldset class="formContainer">
+      <legend><h3>Kontaktinformation</h3></legend>
+
+      <div class="navntxt">
+        <label for="txtinput">Indtast Navn</label>
+        <input type="text" id="txtinput" placeholder="Indtast Navn" required />
+      </div>
+
+      <div class="efterNavn">
+        <label for="efterNavn">Indtast Efternavn</label>
+        <input type="text" id="efterNavnInput" placeholder="Indtast Efternavn" required />
+      </div>
+
+      <div class="adresse">
+        <label for="adresse">Indtast Adresse</label>
+        <input type="text" id="adresseInput" placeholder="Indtast Adresse" required />
+      </div>
+
+      <div class="postNummer">
+        <label for="postNummer">Indtast Postnummer</label>
+        <input type="text" id="postNummerInput" placeholder="Indtast Postnummer" required />
+      </div>
+
+      <div class="emailtxt">
+        <label for="emailinput">Indtast Email</label>
+        <input type="email" id="emailinput" placeholder="Indtast Email" />
+      </div>
+
+      <div class="firmatxt">
+        <label for="txtfirma">Indtast Firma</label>
+        <input type="text" name="firma" id="txtfirma" placeholder="Indtast Firma" />
+      </div>
+
+      <div class="numbertxt">
+        <label for="tlfnum">Indtast Nr</label>
+        <input type="number" id="tlfnum" placeholder="12 34 56 78" />
+      </div>
+
+      <div class="txtarea">
+        <label for="textarea">Skriv en kommentar</label>
+        <br />
+        <textarea rows="10" name="textarea" id="textarea" placeholder="Skriv En Kommentar"></textarea>
+      </div>
+
+      <div class="subres">
+        <input type="reset" value="reset" />
+        <input type="submit" />
+      </div>
+      <div>
+        <button onclick="window.mydialog.close();">Luk</button>
+      </div>
+    </fieldset>
+  </form>
+</dialog>
+
+</header>
+
+<main>
+
+  
+  <section class="omOs">
+
+    <h1 class="OmOsheader">Om os</h1>
+    
+<figure>
+  <video src="assets/img/pexels-taryn-elliott-9583751 (720p).mp4" autoplay loop></video >
+  <figcaption class="figCaption">
+    <h4>Begyndelsen</h4>
+
+BliBaDO begyndte i 2018 da to udviklere var værter for tre rejsende, der ledte efter et sted at bo. Nu har millioner af værter og gæster oprettet en gratis BliBaDo-konto.
+<br>
+
+Uanset om det er en forretningsrejse, weekendtur, familieferie, eller et længere ophold, er der millioner af fantastiske steder at besøge.
+<br>
+
+Vi arbejder med: Bekræftede personlige profiler samt en pålidelig platform til at opkræve og overføre betalinger.
+<br>
+<br>
+<br>
+<br>
+
+<a class="læsMere" href="#">Læs mere:</a> 
+
+  </figcaption>
+</figure>
+  </section>
+  
+  <section class="cardSection">
+    <figure class="cards">
+      <img src="assets/img/Location-01-01.jpg" alt="">
+      <figcaption>
+        <span class="cardHeadings">Location One</span> <br>
+        <span class="cardHeadings">Antal Sovepladser:</span> <br>
+        Voksne: 2 <br>
+        Børn: 3 <br>
+        <span class="cardHeadings">Faciliteter:</span> <br>
+        Vask: Ja <br>
+        <span class="cardHeadings">Reservation:</span> <br>
+        Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke om mindre. <br>
+        <span class="cardHeadings">Pris / Døgn:</span> <br>
+        Kr.: 600,- <br>
+        <span class="cardHeadings">Beskrivelse:</span> <br>
+        Lejligheden ligger i en gammel bygning med højt til loftet, masser af lys og en balkon, der vender lige mod syd, så du kan nyde solopgangen og solnedgangen med udsigt over havet og den lille havn.
+      </figcaption>
+    </figure>
+
+
+
+    <figure class="cards">
+      <img src="assets/img/Location-02-01.jpg" alt="">
+      <figcaption>
+        <span class="cardHeadings">Location Two</span> <br>
+        <span class="cardHeadings">Antal Sovepladser:</span> <br>
+        Voksne: 4 <br>
+        Børn: 4 <br>
+        <span class="cardHeadings">Faciliteter:</span><br>
+        Vask: Nej <br>
+       <span class="cardHeadings">Reservation:</span>  <br>
+        Minimum reservation er 2 nætter. <br>
+        <span class="cardHeadings">Pris / Døgn:</span> <br>
+        Kr.: 550,- <br>
+        <span class="cardHeadings">Beskrivelse:</span> <br>
+        Nyd udsigten fra den store balkon i en klassisk møbleret lejlighed. Du har adgang til: En entre med et toilet (mulighed for bruser), to store værelser eget badeværelse, godt køkken og to soveværelser. 
+        
+      </figcaption>
+    </figure>
+
+    <figure class="cards">
+      <img src="assets/img/Location-03-01.jpg" alt="">
+      <figcaption>
+        <span class="cardHeadings">Location Three</span> <br>
+        <span class="cardHeadings">Antal Sovepladser:</span> <br>
+        Voksne: 3 <br>
+        Børn: 4 <br>
+        <span class="cardHeadings">Faciliteter:</span> <br>
+        Vask: Nej <br>
+        <span class="cardHeadings">Reservation:</span> <br>
+        Minimum reservation er 5 nætter. <br>
+        <span class="cardHeadings">Pris / Døgn:</span> <br>
+        Kr.: 650,- <br>
+        <span class="cardHeadings">Beskrivelse:</span> <br>
+        62 kv/m lejlighed med en fantastisk udsigt og privat parkeringsplads mod et ekstra gebyr. Ti minutters gang til en shoppingmole Fisketorvet. Nyd solrige aftener på en balkon med en kold drink.
+        
+      </figcaption>
+    </figure>
+
+    <figure class="cards">
+      <img src="assets/img/Location-04-01.jpg" alt="">
+      <figcaption>
+        <span class="cardHeadings">Location Four</span> <br>
+        <span class="cardHeadings">Antal Sovepladser:</span> <br>
+        Voksne: 2 <br>
+        Børn: 3 <br>
+        <span class="cardHeadings">Faciliteter:</span> <br>
+        Vask: Ja <br>
+        <span class="cardHeadings">Reservation:</span> <br>
+        Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke om mindre. <br>
+        <span class="cardHeadings">Pris / Døgn:</span> <br>
+        Kr.: 600,- <br>
+       <span class="cardHeadings">Beskrivelse:</span>  <br>
+        Bygning med højt til loftet, masser af lys og sydvendt balkon, så du kan nyde udsigten over den idylliske havn. Køkken og spisestue er veludrustet og forbundet med en dobbeltdør. 
+        
+      </figcaption>
+    </figure>
+
+    <figure class="cards">
+      <img src="assets/img/Location-05-01.jpg" alt="">
+      <figcaption>
+        <span class="cardHeadings">Location Five</span> <br>
+       <span class="cardHeadings">Antal Sovepladser:</span>  <br>
+        Voksne: 2 <br>
+        Børn: 4 <br>
+        <span class="cardHeadings">Faciliteter:</span><br>
+        Vask: Ja <br>
+       <span class="cardHeadings">Reservation:</span>  <br>
+        Minimum reservation er 2 nætter. <br>
+       <span class="cardHeadings">Pris / Døgn: </span> <br>
+        Kr.: 550,- <br>
+        <span class="cardHeadings">Beskrivelse:</span> <br>
+        Nyd udsigten over København fra den store balkon og slappe af i en rummelig klassisk møbleret lejlighed. Du har adgang til: En entre med et toilet, to store værelser, godt køkken og to soveværelser.
+        
+      </figcaption>
+    </figure>
+
+    <figure class="cards">
+      <img src="assets/img/Location-06-01.jpg" alt="">
+      <figcaption>
+        <span class="cardHeadings">Location Six</span> <br>
+        <span class="cardHeadings">Antal Sovepladser:</span> <br>
+        Voksne: 2 <br>
+        Børn: 4 <br>
+        <span class="cardHeadings">Faciliteter:</span> <br>
+        Vask: Nej <br>
+        <span class="cardHeadings">Reservation:</span> <br>
+        Minimum reservation er 6 nætter. <br>
+        <span class="cardHeadings">Pris / Døgn:</span> <br>
+        Kr.: 950,- <br>
+        <span class="cardHeadings">Beskrivelse:</span> <br>
+        LakeView Cabin er en traditionel træhytte, nyrenoveret i eksotisk stil. Direkte adgang til stranden, udendørs bruser og sauna. Perfekt til par, livsnydere og naturelskere.
+      </figcaption>
+    </figure>
+  </section>
+
+  <h1>Aktuelt</h1>
+  <section id="favoriteParent">
+
+      <div class="div1"><img id="mainImage" src="assets/img/Location-06-01.jpg" alt="Choose"></div>
+
+      <div class="div2"><img id="imgOne" src="assets/img/Location-06-01.jpg" alt="Choose"></div>
+      <div class="div3"><img id="imgTwo" src="assets/img/Location-06-02.jpg" alt="Choose"></div>
+      <div class="div4"><img id="imgThree" src="assets/img/Location-06-03.jpg" alt="Choose"></div>
+      <div class="div5"><img id="imgFour" src="assets/img/Location-06-04.jpg" alt="Choose"></div>
+
+  </section>
+
+
+  <footer class="mainfooter">
+    <figure>
+        <figcaption>
+    <h2 style="color: #32729b;">Din lokation:</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.0631203676478!2d9.915947576496016!3d57.04537099170108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464932f36df9822d%3A0x3e138af58c359f60!2sBoulevarden%2019%2C%209000%20Aalborg!5e1!3m2!1sen!2sdk!4v1749547825616!5m2!1sen!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </figcaption>
+    </figure>
+    <figure>
+        <figcaption>
+        <h2 style="color: #32729b;">Informationer</h2>
+        <br>
+<span> Boulevarden 29, 9000 Aalborg</span> <br>
+<a href="#"> 3344 5566</a> <br>
+<a href="#"> info@blibado.dk</a> <br>
+<span> CVR: 5533 66 7788</span> <br>
+        </figcaption>
+    </figure>
+</footer>
+
+
+
+
+  
+  
+  
+  
+</main>
   </body>
 </html>
+
+
